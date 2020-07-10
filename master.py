@@ -1,12 +1,11 @@
 # TODO: Write a code that will wait for user input on keyboard. Create response for each keystroke.
-# NOTE: I need to create a way to exit out of the infinite loop of waiting for keystroke, other than ctrl+c. 
+# NOTE: I need to create a way to exit out of the infinite loop of waiting for keystroke, other than ctrl+c.  
 
-import keyboard 
+import keyboard as kb
 import threading
-import time
 
 def key_struck():
-    keyboard.wait('esc')
+    kb.wait('esc')
     print('Esc pressed.\n')
 
 def waiting_for_key():
@@ -15,7 +14,7 @@ def waiting_for_key():
     thread.start()
 
     # Monitor keystroke
-    keyboard.add_hotkey(' ', print, args=['space was pressed'])
+    kb.add_hotkey(' ', print, args=['space was pressed'])
     
     # Wait for Esc key to terminate program
     thread.join()
