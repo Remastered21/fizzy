@@ -8,6 +8,13 @@ import keyboard as kb
 import threading
 
 # For audio playback
-import playsound
+from playsound import playsound
 
-filename = 'myfile.wav'
+# For directory of the script being run
+import os
+CURENT_PATH = os.getcwd()
+
+
+filename = 'starwars_slowdown.mp3'
+print(f'{CURENT_PATH}/{filename}\n')
+playsound(f'{CURENT_PATH}/{filename}')
