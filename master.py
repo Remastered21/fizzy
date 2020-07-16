@@ -1,5 +1,7 @@
-# TODO: Write a code that will wait for user input on keyboard. Create response for each keystroke.
+# TODO: Write a code that will wait for user input on keyboard. Create response for each keystroke. ! done
 # NOTE: I need to create a way to exit out of the infinite loop of waiting for keystroke, other than ctrl+c. 
+
+# TODO: Create an audio player.
 
 import keyboard as kb
 import threading
